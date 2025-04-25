@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!--css link-->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="/css/google-font.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/google-font.css" />
     <!--font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
     <!--OwlCarousel-->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <!-- Light Box -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup/magnific-popup.css" media="all"
-        rel="preload">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup/magnific-popup.css" media="all" rel="preload" />
+  </head>
 
-</head>
+  <body>
+    <!-- Form Data -->
+    <div class="fromsec">
+      <div class="formbox container">
+        <form method="post" id="forminfo">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" name="Name" placeholder="Enter Your Name." />
+              </div>
+            </div>
 
-<body>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="Email" placeholder="Enter Your Email Id." />
+              </div>
+            </div>
 
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="number" class="form-control" name="Mobile" placeholder="Enter Your Mobile Number." />
+              </div>
+            </div>
 
-
-
-
-
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Messages</label>
+                <textarea class="form-control" name="Messages" placeholder="Messages" cols="2" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button class="Submit mailsavbtn" name="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!--js script-->
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--OwlCarousel-->
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
-    <script src=" /js/bootstrap.min.js "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src=" /js/bootstrap.min.js"></script>
     <!-- Gallery -->
-    <script src=" /js/jquery.magnific-popup.min.js "></script>
-    <script src=" /js/main.js "></script>
-
-</body>
-
+    <script src=" /js/jquery.magnific-popup.min.js"></script>
+    <script src=" /js/main.js"></script>
+    <script src=" /js/form-data.js"></script>
+  </body>
 </html>

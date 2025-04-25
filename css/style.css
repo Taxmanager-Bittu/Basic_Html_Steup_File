@@ -1,3 +1,411 @@
 /*--master css--*/
 
 @import url("/css/master.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.formbox {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #cecdcd;
+    border-radius: 4px;
+}
+
+.formbox .form-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.formbox form {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.fromsec {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    height: 45px;
+    border-radius: 4px;
+    border: 1px solid #efeded;
+    background: #f1efef;
+    padding: 0px 20px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+button.Submit {
+    background: #2196f3;
+    border-radius: 4px;
+    border: unset;
+    padding: 12px 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin: 0;
+    display: block;
+    width: max-content;
+    position: relative;
+    transition: 0.5s all linear;
+    z-index: 2;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.form-control:focus-visible {
+    outline-color: #e9e8e8;
+}
+
+button.Submit:after {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #0966b1, #056a98);
+    transition: 0.5s all linear;
+    z-index: -1;
+}
+
+button.Submit:hover {
+    transition: 0.5s all linear;
+}
+
+button.Submit:hover:after {
+    left: 0;
+}
+
+textarea.form-control {
+    height: 100px;
+    padding: 15px;
+}
+
+
+/*--- Porcess to leyout ---*/
+
+.layersproces {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    z-index: 1;
+    padding: 100px 20px;
+}
+
+.layersproces li {
+    display: flex;
+    margin: 0px 0 5px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    z-index: auto;
+    cursor: pointer;
+    transition: 0.5s all linear;
+    counter-increment: auto-increment-numbers;
+}
+
+.layersproces li .textypelig,
+.layersproces li .empty {
+    display: block;
+    flex: 0 0 calc(50% - 10rem);
+    position: relative;
+}
+
+.layersproces li .svg {
+    flex: 0 0 20rem;
+}
+
+.layersproces li .textypelig p {
+    color: #000;
+    background-color: #f1f1f1;
+    border-radius: 80px;
+    transition: color .8s ease, background-color .8s ease;
+    margin: 0;
+    line-height: 15px;
+    font-size: 12px;
+    padding: 15px 25px;
+    letter-spacing: 0.5px;
+    padding-right: 25px;
+}
+
+.servleystep {
+    background: #fff;
+    position: relative;
+    margin: 50px auto 0;
+    padding: 0px 0px;
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+}
+
+.layersproces li .textypelig {
+    text-align: left;
+}
+
+.layersproces li .textypelig:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 12px;
+    width: 100%;
+    border-bottom: 2px dashed #e3e3e3;
+    z-index: -1;
+}
+
+.layersproces li:nth-child(even) .textypelig:after {
+    left: -40px;
+}
+
+.layersproces li:nth-child(even) .textypelig {
+    text-align: right;
+}
+
+.layersproces li .svg svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -35px;
+}
+
+.layersproces li.active .textypelig p,
+.layersproces li:hover .textypelig p {
+    background: #3370de;
+    color: #fff;
+    transition: 0.5s all linear;
+}
+
+.layersproces li.active svg path,
+.layersproces li:hover svg path {
+    fill: #3370de;
+    transition: 0.5s all linear;
+}
+
+.layersproces li.active .textypelig::after,
+.layersproces li:hover .textypelig::after {
+    border-color: #3370de;
+    transition: 0.5s all linear;
+}
+
+.slider {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #e7e7e7;
+}
+
+.servleystep .slidersection {
+    margin: 0;
+    padding: 50px;
+    height: calc(100% - 100px);
+}
+
+.slidersection .textslid {
+    position: relative;
+    margin: 0;
+    padding: 0px 0px 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+.slidersection .textslid h5 {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.slidersection .textslid p {
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.owl-stage {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.servleystep .owl-nav {
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+}
+
+.servleystep .owl-nav button {
+    width: 35px;
+    height: 35px;
+    background: #f1f1f1 !important;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #d7d4d4 !important;
+    cursor: pointer;
+}
+
+.servleystep .owl-nav button span {
+    font-size: 25px;
+    line-height: 30px;
+    height: unset;
+    display: inline-block;
+    color: #5f5f5f;
+}
+
+.servleystep .owl-dots {
+    position: absolute;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2px;
+    bottom: 30px;
+    right: 20px;
+}
+
+.servleystep .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #bfbfbf;
+    transition: 0.5s all linear;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.servleystep .owl-dots .owl-dot.active {
+    width: 50px;
+    background: #3370de;
+    transition: 0.5s all linear;
+}
+
+.servleystep .owl-nav button:hover {
+    background: #3370de !important;
+}
+
+.servleystep .owl-nav button:hover span {
+    color: #fff;
+}
+
+.layersproces li:before {
+    content: counter(auto-increment-numbers);
+    position: absolute;
+    left: 8px;
+    z-index: 1;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    background: #bbcdec4f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all linear;
+}
+
+.layersproces li:nth-child(even):before {
+    left: unset;
+    right: 5px;
+}
+
+.layersproces li:nth-child(even) p {
+    padding-right: 50px;
+    text-align: left;
+}
+
+.layersproces li:nth-child(odd) p {
+    padding-left: 50px;
+}
+
+.layersproces li.active::before {
+    background: #ffffff;
+    color: #3370de;
+    transition: 0.5s all linear;
+}
+
+.servleystep .slidersection .owl-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.slidersection .textslid span {
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    line-height: 75px;
+    margin-bottom: 20px;
+}
+
+.layersproces li:hover::before {
+    background: #fff;
+    transition: 0.5s all linear;
+}
+
+.layersproces li .textypelig p b {
+    width: 100%;
+    display: inline-block;
+}
+
+
+/*-- Circles  --*/
+
+.circlesecare {
+    position: relative;
+    margin: 0;
+    padding: 50px 0px;
+    display: inline-block;
+    width: 100%;
+}

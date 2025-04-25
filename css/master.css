@@ -66,82 +66,6 @@ h6 {
 }
 
 
-/*--- Ownl Hight --*/
-
-.owl-carousel .owl-stage,
-.owl-carousel .owl-stage .item {
-    display: flex;
-    align-items: stretch;
-    height: 100%;
-    cursor: pointer !important;
-}
-
-.owl-item.active {
-    filter: blur(0.9px);
-    z-index: auto;
-    position: relative;
-    transform: 0.5s all linear;
-}
-
-.owl-item.active.center {
-    filter: unset;
-    transform: scale(1.2);
-    z-index: 99;
-    position: relative;
-    transform: 0.5s all linear;
-}
-
-.owl-carousel.custothinkabout.owl-theme .owl-stage {
-    background: unset;
-    position: relative;
-    margin: 50px 0px;
-}
-
-.owl-item.active.center .nedchoobox {
-    background: #3A2B99;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.custothinkbox .cusdetail .textare {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    width: 100%;
-}
-
-.custothinkbox .cusdetail .textare h4 {
-    font-size: 11px;
-    margin: 0px 0px 5px;
-    padding: 0;
-    text-align: left;
-    color: #000;
-}
-
-.custothinkbox .cusdetail .textare h5 {
-    font-size: 8px;
-    margin: 0;
-    padding: 0;
-    color: #686767;
-}
-
-.custothinkbox p {
-    font-size: 10px;
-    line-height: 20px;
-}
-
-.owl-carousel.owl-theme.custothinkabout .owl-item.active.center {
-    width: 450px !important;
-    transform: scale(1.4);
-}
-
-.custothink h3.headtext {
-    margin-bottom: 50px;
-}
-
-
 /*-- light box Gallery --*/
 
 
@@ -523,7 +447,6 @@ img.mfp-img {
 
 @media screen and (max-width: 800px) and (orientation: landscape),
 screen and (max-height: 300px) {
-
     /**
     * Remove all paddings around the image on small screen
     */
@@ -531,21 +454,17 @@ screen and (max-height: 300px) {
         padding-left: 0;
         padding-right: 0;
     }
-
     .mfp-img-mobile img.mfp-img {
         padding: 0;
     }
-
     .mfp-img-mobile .mfp-figure:after {
         top: 0;
         bottom: 0;
     }
-
     .mfp-img-mobile .mfp-figure small {
         display: inline;
         margin-left: 5px;
     }
-
     .mfp-img-mobile .mfp-bottom-bar {
         background: rgba(0, 0, 0, 0.6);
         bottom: 0;
@@ -555,16 +474,13 @@ screen and (max-height: 300px) {
         position: fixed;
         box-sizing: border-box;
     }
-
     .mfp-img-mobile .mfp-bottom-bar:empty {
         padding: 0;
     }
-
     .mfp-img-mobile .mfp-counter {
         right: 5px;
         top: 3px;
     }
-
     .mfp-img-mobile .mfp-close {
         top: 0;
         right: 0;
@@ -583,17 +499,14 @@ screen and (max-height: 300px) {
         -webkit-transform: scale(0.75);
         transform: scale(0.75);
     }
-
     .mfp-arrow-left {
         -webkit-transform-origin: 0;
         transform-origin: 0;
     }
-
     .mfp-arrow-right {
         -webkit-transform-origin: 100%;
         transform-origin: 100%;
     }
-
     .mfp-container {
         padding-left: 6px;
         padding-right: 6px;
